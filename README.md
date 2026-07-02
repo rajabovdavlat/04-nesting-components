@@ -35,3 +35,39 @@ This example shows clean component architecture:
 - Scoped CSS
 
 **Status:** Completed !!!
+
+
+# 05. Event Bus
+
+**Date:** July 02, 2026
+
+### What I Learned
+
+Today I learned how to use **Event Bus** in Vue 2 — a simple way for components to communicate with each other without using props and events.
+
+### Key Concepts:
+
+- Created a global Event Bus (`new Vue()`) in `main.js`
+- Used `bus.$emit()` to send events
+- Used `bus.$on()` to listen for events
+- Understood when to use Event Bus (for non-parent/child communication)
+
+### Example in this project:
+
+- Clicking on the header changes the title
+- The change is sent via Event Bus
+- Footer receives the new title and updates automatically
+
+### Important Notes:
+
+- Event Bus is good for small to medium projects
+- For larger applications, it's better to use Vuex or Pinia (state management)
+- Always remember to clean up listeners with `$off()` if needed (to avoid memory leaks)
+
+### Conclusion:
+
+Event Bus is a simple and powerful pattern for sharing data between unrelated components. It's like a global messenger in your Vue application.
+
+---
+
+**Status:** Completed !!!
