@@ -71,3 +71,33 @@ Event Bus is a simple and powerful pattern for sharing data between unrelated co
 ---
 
 **Status:** Completed !!!
+
+
+
+# 05. Lifecycle Hooks
+
+**Date:** July 03, 2026
+
+### What I Learned
+
+Today I learned about **Lifecycle Hooks** in Vue 2 — special methods that run at different stages of a component's life.
+
+### Key Hooks I Practiced:
+
+- `beforeCreate`
+- `created`
+- `beforeMount`
+- `mounted`
+- `beforeUpdate`
+- `updated`
+
+### Main Conclusion:
+
+Lifecycle hooks allow us to run code at specific moments in a component's lifecycle. 
+The most useful ones are `created` (for data fetching) and `mounted` (for DOM manipulation).
+
+This example shows alerts at each stage so I could clearly see the order of execution.
+
+---
+
+**Status:** Completed !!!
